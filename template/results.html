@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .form{border-style: solid; border-color: green;}
+       
+        .column {
+            float: left;
+            width: 19%;
+            
+          }
+          
+          .background {background-color: #fff;}
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+            </style> 
+</head>
+<body>
+<div>
+  <br/><br/>
+<h2 align="center">Result</h2>
+
+<hr size="4" width="100%" color="black">  
+<br/><br/>
+{% if images|length < 1 %}
+<p>No search results</p>
+ Your search query : <b>{{query}}</b> did not match any images. <br>
+ Suggestions:
+ <ul>
+ <li>Make sure that all words are spelled correctly.</li>
+ <li>Try more general keywords.</li>
+<li> Try fewer keywords.</li>
+<li> Try different keywords.</li>
+ </li>
+ </ul>
+ {% endif %}   
+ 
+ 
+ <div class="row">
+{% for image in images %}
+      
+<div class="column">
+<form method="get" action="/image/{{image.id}}/{{query}}">
+       <button type="submit" class="background">  
+           <img src={{image.img.url}} id="image" name="image" alt=""height="200" width="250" >
+          
+        </button>
+</form>
+
+</div>
+
+{% endfor %}
+</div>
+</body>
+</html>

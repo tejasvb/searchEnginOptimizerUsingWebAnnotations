@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>  
+<html>  
+<head> 
+    <style>
+  
+.column {
+    float: left;
+    width: 20%;
+  
+  }
+  .background {background-color: #000;}
+ 
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+    </style> 
+<title>Search</title> 
+
+  </head>
+<body class="background">
+ 
+{% for image in selectedImage%}
+    
+    <center>    
+    
+<button type="submit" class="background">  <img src={{image.img.url}} id="image" name="image" alt=""style="border: none; width: 100%;" >
+ <h1 ><font color=white>{{image.name}}</font></h1> 
+              </button>
+          </form>
+    
+    </center>            
+           
+    
+{% endfor %}
+<br/><br/>
+<div class="row">
+{% for image in images %}
+{% if SelectedImageid != image.id %}
+     
+<div class="column">
+    <form method="get" action="/image/{{image.id}}/{{query}}">
+     <button type="submit" class="background">  <img src={{image.img.url}} id="image" name="image" alt=""height="250" width="300" >
+              </button>
+          </form>
+    
+        </div>
+    {%endif%}
+{% endfor %}
+  </div>
+
+    </body>  
+</html>
