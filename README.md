@@ -5,8 +5,8 @@ Our Small college group project.
 Main Objective of the project:
 Search images with the web annotations.
 </br>
-Techology used are:
-Django
+Techology used are:</br>
+Django</br>
 Pgmyadmin For database management 
 
 <h1>Home Pages</h1>
