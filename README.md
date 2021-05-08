@@ -25,7 +25,9 @@ Pgmyadmin For database management
 
 
  <h1>  Search Results</h1>
-![image](https://user-images.githubusercontent.com/63836638/117528368-7a5ea680-afef-11eb-804c-06168b6d52b6.png)</br>
+ 
+![image](https://user-images.githubusercontent.com/63836638/117528368-7a5ea680-afef-11eb-804c-06168b6d52b6.png)
+</br>
 ![image](https://user-images.githubusercontent.com/63836638/117528412-babe2480-afef-11eb-948d-c06651f897b1.png)
 	
 
