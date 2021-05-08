@@ -1,8 +1,10 @@
 # searchEnginOptimizerUsingWebAnnotations
 This is a search engine  for images with web annotaiton
 Our Small college group project.
+</br>
 Main Objective of the project:
 Search images with the web annotations.
+</br>
 Techology used are:
 Django
 Pgmyadmin For database management 
